@@ -19,9 +19,10 @@
 
 def bi_word(input)
   words = input.split(" ")
-  i = 0
+  i = 1
   words.each do |word|
-    puts word[i] + word[i + 1] unless word.nil?
+    puts "#{word}  #{words[i]}" 
+    i += 1
   end
 end
 
