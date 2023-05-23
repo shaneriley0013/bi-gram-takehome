@@ -20,8 +20,8 @@
 def bi_word(input)
   words = input.split(" ")
   i = 1
-  words.each do |word|
-    puts "#{word}  #{words[i]}" 
+  while i < words.length
+    puts "#{words[i-1]} #{words[i]}"
     i += 1
   end
 end
